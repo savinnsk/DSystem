@@ -3,7 +3,7 @@ name: Deploy docs
 on:
   push:
     branches:
-      - test
+      - main
 
 jobs:
   build-and-deploy:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Set Git Remote URL
         run: |
-          git remote set-url origin git@github.com:savinnsk/DSystem.git
+          git remote set-url origin git@github.com:savinnsk/dsystem.git
 
       - run: npm i
 
@@ -44,4 +44,4 @@ jobs:
           touch .nojekyll
           git add .
           git commit -m "Deploy Storybook to GitHub Pages"
-          git push --force --quiet git@github.com:savinnsk/DSystem.git gh-pages
+          git push --force --quiet git@github.com:savinnsk/dsystem.git gh-pages
