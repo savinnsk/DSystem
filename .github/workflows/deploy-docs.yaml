@@ -44,4 +44,4 @@ jobs:
           touch .nojekyll
           git add .
           git commit -m "Deploy Storybook to GitHub Pages"
-          git push --force --quiet https://github.com/savinnsk/DSystem.git gh-pages
+          git push --force --quiet git@github.com:savinnsk/DSystem.git gh-pages
