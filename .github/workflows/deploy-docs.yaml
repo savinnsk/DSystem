@@ -34,8 +34,7 @@ jobs:
 
       - name: Deploy storybook
         working-directory: ./packages/docs
-        with:
-          ssh-key: ${{secrets.new}}
+
         env:
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
