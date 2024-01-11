@@ -1,0 +1,6 @@
+{
+  "extends": "@busca-milhas/eslint-config",
+  "rules": {
+    "@typescript-eslint/no-explicit-any": false
+  }
+}
