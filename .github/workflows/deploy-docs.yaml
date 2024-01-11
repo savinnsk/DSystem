@@ -19,12 +19,12 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "Savinnskk"
+          git config --global user.name "Savinnsk"
           git config --global user.email "saviodocuments@gmail.com"
 
       - name: Set Git Remote URL
         run: |
-          git remote set-url origin git@github.com:savinnsk/design-system.git
+          git remote set-url origin git@github.com:savinnsk/DSystem.git
 
       - run: npm i
 
@@ -44,4 +44,4 @@ jobs:
           touch .nojekyll
           git add .
           git commit -m "Deploy Storybook to GitHub Pages"
-          git push --force --quiet https://github.com/savinnsk/design-system.git gh-pages
+          git push --force --quiet https://github.com/savinnsk/DSystem.git gh-pages
