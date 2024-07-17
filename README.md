@@ -1,6 +1,6 @@
 
 ## Tools
 
-React
-styled-components
-storybook
+- React
+- styled-components
+- storybook
